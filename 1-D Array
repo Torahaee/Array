@@ -23,3 +23,20 @@ int main(){
     cout<<sum;
 }
 
+3> Write a C++ program to print oddsum and evensum for an array.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[5]={2,3,1,0,6};
+    int oddsum=0;
+    int evensum=0;
+    for(int i=0; i<=4; i++){
+        if(i%2==0){
+            oddsum=oddsum+arr[i];
+        }
+        else{
+            evensum=evensum+arr[i];
+        }
+    }
+    cout<<"Oddsum ="<<oddsum<<" "<<"Evensum ="<<evensum<<endl;
