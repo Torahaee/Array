@@ -40,3 +40,22 @@ int main(){
         }
     }
     cout<<"Oddsum ="<<oddsum<<" "<<"Evensum ="<<evensum<<endl;
+}
+
+4> Write a C++ program to demonstrate Reverse Array.
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[5]={3,6,2,8,9};
+    int i=0;
+    int j=4;
+    while(i<=j){
+        swap(arr[i],arr[j]);
+        i++;
+        j--;
+    }
+    for(int k=0; k<=4; k++){
+    cout<<arr[k]<<" ";
+    }
+}
